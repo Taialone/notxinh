@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad boy code dạo</title>
+    <style>
+        body
+        {
+            background-image: linear-gradient(to right top, #d6d6d6, #d4cadb, #dcbbd7, #eaaaca, #f798b2, #ff9898, #fe9e7c, #f1a864, #d4c368, #afdb87, #85edb9, #5ffbf1);
+            text-align: center;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            height: 800px;
+        }
+        #container
+        {
+
+          padding-top: 400px;
+        }
+        #title{
+            font-size: 20px;
+            color: #212121;
+            font-weight: bold;
+        }
+        #thich{
+            border: 1px solid aqua;
+            border-radius: 5px;
+            padding: 20px;
+            background-image: linear-gradient(to right top, #d6d6d6, #cac1dd, #c5a9df, #c78fdc, #cd71d3, #bd78e3, #a880f2, #8d88ff, #1eafff, #00cdff, #00e7ff, #5ffbf1);
+        }
+        #notthich{
+            border: 1px solid aqua;
+            border-radius: 5px;
+            padding: 20px;
+            background-image: linear-gradient(to right top, #d6d6d6, #cac1dd, #c5a9df, #c78fdc, #cd71d3, #bd78e3, #a880f2, #8d88ff, #1eafff, #00cdff, #00e7ff, #5ffbf1);
+        }
+    </style>
+    <script>
+        function notthich(x) {
+            x.value = "Not Xinh"
+    
+        }
+        function bochon(x){
+        x.value = "Xinh"
+        }
+
+        function notify(){
+                document.getElementById("title").innerText = "Cố tí nữa là xinh rồi!!!"    
+        
+        }
+        function notify1(){
+            
+                document.getElementById("title").innerText = "Sau nhiều anh theo đuổi!!!"
+            
+        }
+
+    </script>
+</head>
+<body>
+    <div id="container">
+        <p id="title">Minh có xinh khônggg</p>
+        <div>
+            <input id="thich" type="button" value="Xing" onmousemove="notthich(this)" onmouseout="bochon(this)" onclick="notify()">
+            <input  id="notthich" type="button" value="Không Không" onclick="notify1()" >
+        </div>
+    </div>
+</body>
+</html>
